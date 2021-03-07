@@ -25,3 +25,19 @@ python3
 '1.0'
 >>> 
 ```
+Créer People
+```
+import hello_component
+p = hello_component.People('Long','LE')
+>>> print(p)
+<hello_component.People object at 0x7f4943ab0a40>
+>>> p.getFirstName()
+'Long'
+>>> p.getLastName()
+'LE'
+>>> p.setFirstName('Thanh Long')
+>>> p.getFirstName()
+'Thanh Long'
+>>> exit()
+
+```
