@@ -14,17 +14,6 @@ Pour compiler
 cd hello
 make
 ```
-
-Pour utiliser
-```
-python3
->>> import hello_component
->>> hello_component.greet()
-'hello, world'
->>> hello_component.getVersion()
-'1.0'
->>> 
-```
 Créer People
 ```
 import hello_component
@@ -40,4 +29,17 @@ p = hello_component.People('Long','LE')
 'Thanh Long'
 >>> exit()
 
+```
+
+Exemple d'utilisation de Crypto
+```
+>>> cd crypto
+>>> make
+>>> python3
+>>> import crypto_component
+>>> c = crypto_component.Crypto()
+>>> c.initialize("4b8e29b9b0dddd58a709edba7d6df6c07ebdaf5653e325114bc5318c238f87f0")
+>>> c.getPrivateKey()
+'4b8e29b9b0dddd58a709edba7d6df6c07ebdaf5653e325114bc5318c238f87f0'
+>>> exit()
 ```
